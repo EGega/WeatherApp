@@ -19,7 +19,7 @@ submit.addEventListener("click", () => {
   // if else  we call the api with fetch method
   else {
     const getTheCity = () => {
-      const url = `https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=74935d8e2f81455102caaeb68d8bb24d`
+      const url = `https://api.openweathermap.org/data/2.5/weather?q=${input.value.toLowerCase()}&appid=74935d8e2f81455102caaeb68d8bb24d`
      fetch(url)
      .then((res) => {
       // Here we write an error if the entered city doesn't exist
@@ -38,7 +38,7 @@ submit.addEventListener("click", () => {
       const {name} = data
       console.log(name);
       // Here we check for duplicated values by using an if inside the if
-      if(cities.includes(name)) {
+      if(cities.includes(name.toLowerCase())) {
         warning.innerText = `${name} is already displayed`
         // we use the settime out to delete our warning in some seconds
       setTimeout(() => {
@@ -72,7 +72,8 @@ submit.addEventListener("click", () => {
      // The default temperature unit is kelvin so we have to reformulate it to celcius 
      const celcius = (temp - 273.15).toFixed()
      // Pushing the name of the cities is crucial since we need to recheck for duplicates later
-     cities.push(name)
+     cities.push(name.toLowerCase())
+     console.log(cities);
      
      // Here we create the card inside the weatherContainer
      weatherContainer.innerHTML += `<div class="city-card">
