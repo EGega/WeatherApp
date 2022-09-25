@@ -202,6 +202,7 @@ position: relative;
   }
   .name span {
     position: absolute;
+    top: -8px;
     font-size: 8px;
     padding: 5px;
     border-radius: 30%;
