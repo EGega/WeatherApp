@@ -43,7 +43,7 @@
   background: none;
   border: none;
   border-bottom: 1px solid #fff;
-  font-size:2rem;
+  font-size:1.7rem;
   color: #fff;
   outline: none;
   z-index: 10;
@@ -53,7 +53,7 @@
 }
 .submit-btn {
   width: 12%;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   cursor: pointer;
   border-radius: 20px;
   border: none;
@@ -95,7 +95,7 @@ h1{
 }
 
 .name {
-  font-size: 3rem;
+  font-size: 2.1rem;
   color: rgba(82, 82, 82, 0.992);
   font-weight: 300;
   position: relative;
@@ -104,7 +104,7 @@ h1{
   position: absolute;
   background-color: orange;
   color: #fff;
-  font-size: 20px;
+  font-size: 15px;
   padding: 5px;
   border-radius: 30%;
   margin-left: 10px;
@@ -122,7 +122,7 @@ position: relative;
 }
 
 .description {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   text-transform: uppercase;
   color: rgba(82, 82, 82, 0.992);
   font-weight: 300;
