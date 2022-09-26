@@ -81,6 +81,7 @@ submit.addEventListener("click", () => {
      <h2 class="degree">${celcius} <span>°C </span> </h2>
      <img src="./icons/${icon}.png" alt="">
      <p class="description">${description}</p>
+     
    </div>`
 
    }
