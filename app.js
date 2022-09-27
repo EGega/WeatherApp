@@ -76,13 +76,13 @@ submit.addEventListener("click", () => {
      console.log(cities);
      
      // Here we create the card inside the weatherContainer
-     weatherContainer.innerHTML += `<div class="city-card">
+     weatherContainer.innerHTML = `<div class="city-card">
      <h2 class="name">${name} <span>${country}</span></h2>
      <h2 class="degree">${celcius} <span>°C </span> </h2>
      <img src="./icons/${icon}.png" alt="">
      <p class="description">${description}</p>
      
-   </div>`
+   </div>` + weatherContainer.innerHTML;
 
    }
    // Here we call the function
